@@ -87,6 +87,7 @@ local opts = { noremap = true, silent = true }
 vim.keymap.set('n', '<F3>', '<Cmd>Lspsaga diagnostic_jump_next<CR>', opts)
 vim.keymap.set('n', '<F4>', '<Cmd>Lspsaga show_line_diagnostics<CR>', opts)
 vim.keymap.set('n', 'gh', '<Cmd>Lspsaga hover_doc<CR>', opts)
-vim.keymap.set('n', 'gd', '<Cmd>Lspsaga lsp_finder<CR>', opts)
+vim.keymap.set('n', 'gd', '<Cmd>Lspsaga goto_definition<CR>', opts)
+vim.keymap.set('n', 'gt', '<Cmd>goto_type_definition<CR>', opts)
 -- vim.keymap.set('n', '', '<Cmd>Lspsaga preview_definition<CR>', opts)
 vim.keymap.set('n', '<F2>', '<Cmd>Lspsaga rename<CR>', opts)
